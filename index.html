@@ -75,15 +75,20 @@
 
   /* ---------- HERO ---------- */
   .hero{padding:140px 0 70px}
+  .hero-top{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+  @media(max-width:680px){.hero-top{grid-template-columns:1fr;gap:0}}
   .hero-meta{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.1em;margin-bottom:28px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   .hero-meta .tag{border:1px solid var(--line);border-radius:30px;padding:4px 12px;color:var(--ink-2)}
   .hero-meta .dot{color:var(--brick)}
   .hero h1{
     font-family:var(--cn-serif);font-weight:700;
-    font-size:clamp(44px,8vw,86px);line-height:1.04;letter-spacing:.01em;color:var(--ink);
+    font-size:clamp(48px,9vw,96px);line-height:1.02;letter-spacing:.02em;color:var(--ink);
   }
   .hero h1 .it{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--brick)}
-  .hero-en{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.4vw,24px);color:var(--muted);margin-top:10px;font-weight:400}
+  .hero-en{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2.4vw,24px);color:var(--muted);margin-top:12px;font-weight:400;letter-spacing:.02em}
+  .hero-portrait{width:clamp(120px,16vw,168px);height:clamp(120px,16vw,168px);border-radius:50%;object-fit:cover;border:4px solid var(--paper);box-shadow:0 0 0 1px var(--line),0 20px 40px -16px rgba(0,0,0,.3);transition:.4s}
+  .hero-portrait:hover{transform:scale(1.04);box-shadow:0 0 0 1px var(--brick),0 24px 44px -16px rgba(0,0,0,.35)}
+  @media(max-width:680px){.hero-portrait{width:100px;height:100px;margin-top:-30px;margin-left:auto;display:block}}
   .hero-lead{
     font-family:var(--cn-serif);font-size:clamp(16px,2vw,20px);line-height:1.9;
     max-width:620px;margin-top:34px;color:var(--ink-2);
@@ -275,15 +280,20 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="hero-meta reveal">
-      <span class="tag">资深产品经理</span>
-      <span class="tag">8年证券行业</span>
-      <span class="dot">●</span>
-      <span>北京邮电大学 · 硕士</span>
+    <div class="hero-top">
+      <div>
+        <div class="hero-meta reveal">
+          <span class="tag">资深产品经理</span>
+          <span class="tag">8年证券行业</span>
+          <span class="dot">●</span>
+          <span>北京邮电大学 · 硕士</span>
+        </div>
+        <h1 class="reveal">陈元昊<span style="font-size:.5em;color:var(--muted);font-weight:400;margin-left:14px">Chen Yuanhao</span></h1>
+        <div class="hero-en reveal">渠道拓客 × AI 运用，把<span style="color:var(--brick);font-weight:600">增长</span>做扎实。</div>
+      </div>
+      <img class="hero-portrait reveal" src="assets/portrait.png" alt="陈元昊">
     </div>
-    <h1 class="reveal">渠道拓客 × AI 运用，<br>把<span class="it">增长</span>做扎实。</h1>
-    <div class="hero-en reveal">Chen Yuanhao — Product Manager, Channel Growth & AIGC</div>
-    <p class="hero-lead reveal">资深产品经理，深耕证券行业 <b>8 年</b>。近两年聚焦互联网渠道投放获客（巨量引擎、小红书聚光、腾讯广告，<b>月耗百万级</b>）与 AIGC 运用（内容运营、素材生产、合规预审），把增长和 AI 都落到一线。</p>
+    <p class="hero-lead reveal" style="margin-top:34px">资深产品经理，深耕证券行业 <b>8 年</b>。近两年聚焦互联网渠道投放获客（巨量引擎、小红书聚光、腾讯广告，<b>月耗百万级</b>）与 AIGC 运用（内容运营、素材生产、合规预审），把增长和 AI 都落到一线。</p>
     <div class="hero-stats reveal">
       <div class="hstat"><div class="n">8<span style="font-size:15px">yrs</span></div><div class="l">证券行业经验</div></div>
       <div class="hstat"><div class="n">100W+</div><div class="l">月投放消耗</div></div>
@@ -451,6 +461,7 @@
       </div>
       <span class="feat-match">★ 与算法投放/智能投放 JD 高度契合</span>
       <p class="feat-desc">轻量级互联网广告投放分析平台，是<b>互联网渠道拓客全链路数据支撑体系</b>的落地 Demo。整合腾讯广告、抖音广告、小红书广告三大平台数据，提供多维度投放分析与可视化，覆盖「消耗 → 转化 → 投产」全链路监测。</p>
+      <p class="feat-desc" style="margin-top:-6px;margin-bottom:18px">通过这个项目，<b>探索各投放平台与内部数据结构、数据链路</b>，并尝试用 <b>vibe coding 辅助需求推进与运营分析</b>——把 AI 写代码的能力用到产品迭代和数据分析的一线。</p>
       <div class="feat-features">
         <div class="feat-f"><span class="ck">✓</span>多平台数据整合：腾讯/抖音/小红书广告</div>
         <div class="feat-f"><span class="ck">✓</span>日级趋势分析：日期/平台/代理商/业务模式多维度</div>
