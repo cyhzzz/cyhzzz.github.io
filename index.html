@@ -215,6 +215,11 @@
   .xhs-big img{width:150px;height:auto;border-radius:12px;border:1px solid var(--line);flex-shrink:0;box-shadow:0 10px 24px -14px rgba(0,0,0,.3)}
   .xhs-big-stats{font-size:13px;color:var(--muted);line-height:1.9}
   .xhs-big-stats b{color:var(--brick);font-family:var(--serif);font-size:17px;font-weight:700}
+  .xhs-premise{font-family:var(--cn-serif);font-size:13.5px;color:var(--ink-2);line-height:1.75;margin:4px 0 14px;padding:12px 14px;background:var(--paper-2);border-radius:10px}
+  .xhs-pts{list-style:none;display:grid;gap:8px;margin:14px 0 4px}
+  .xhs-pts li{font-size:12.5px;color:var(--ink-2);padding-left:16px;position:relative;line-height:1.65}
+  .xhs-pts li::before{content:"❤";position:absolute;left:0;top:2px;color:var(--brick-soft);font-size:10px}
+  .xhs-pts li b{color:var(--ink);font-weight:600}
   .xhs-col-link{display:flex;align-items:center;gap:12px;margin-top:14px;text-decoration:none;padding:14px 16px;border:1px solid var(--brick);border-radius:12px;background:rgba(184,68,46,.04);transition:.3s}
   .xhs-col-link:hover{background:rgba(184,68,46,.08);transform:translateY(-2px)}
   .xhs-col-ic{width:40px;height:40px;border-radius:10px;background:linear-gradient(145deg,#ff2442,#ff5a5f);display:grid;place-items:center;color:#fff;font-size:18px;font-family:var(--serif);font-weight:700;flex-shrink:0}
@@ -480,18 +485,22 @@
           <span class="more-logo xhs">红</span>
           <div>
             <h3>小红书 · sunshine</h3>
-            <p class="sub">AIGC 流量实战 · 产品观察</p>
+            <p class="sub">亲身探索 AIGC 流量运营</p>
           </div>
         </div>
+        <p class="xhs-premise">不只是用 AI 产出内容——而是用自己的号，亲自跑通「AI 驱动流量运营」这件事，再去赋能团队。</p>
         <div class="xhs-big">
           <img src="assets/xiaohongshu.jpg" alt="小红书主页">
           <div class="xhs-big-stats">
             单篇最高阅读 <b>10万+</b><br>
-            万阅笔记 <b>10+</b> 篇<br>
-            赋能投顾 AI 创作<br>
-            赋能运营沉淀方法论
+            万阅笔记 <b>10+</b> 篇
           </div>
         </div>
+        <ul class="xhs-pts">
+          <li><b>亲身探索</b>：以个人号实战 AIGC 驱动的内容运营，跑通选题 → 生成 → 分发全流程，验证 AI 生成内容在真实流量池里的可行性</li>
+          <li><b>赋能投顾</b>：指导投顾用 AI 辅助创作流量笔记，最高阅读量突破 <b>10万+</b></li>
+          <li><b>赋能运营</b>：把跑通的爆款方法论沉淀成可复制流程，培训团队批量产出优质内容</li>
+        </ul>
         <a class="xhs-col-link" href="https://www.xiaohongshu.com/collection/item/6a4245ca0de8000000000001?xhsshare=&appuid=5b100b04f7e8b9336a1de356&apptime=1782737675&share_id=20cb5f223a054e0bb185afcbc6c75ff9&share_channel=copy_link" target="_blank" rel="noopener">
           <span class="xhs-col-ic">合</span>
           <div class="ctxt">
